@@ -10,4 +10,5 @@ Vagrant.configure(2) do |config|
 
   config.vm.provision "shell", path: 'provision.sh', privileged: false
   config.vm.provision "file", source: 'nodejs.spec', destination: '~/rpmbuild/SPECS/nodejs.spec'
+  config.vm.provision "file", source: 'i3.spec', destination: '~/rpmbuild/SPECS/i3.spec'
 end
