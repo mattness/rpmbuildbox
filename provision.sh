@@ -84,6 +84,7 @@ sources=('http://xcb.freedesktop.org/dist/xcb-util-cursor-0.1.0.tar.gz')
 sources+=('https://github.com/lloyd/yajl/archive/2.0.4.tar.gz')
 sources+=('http://i3wm.org/downloads/i3-4.8.tar.bz2')
 sources+=('https://github.com/i3/i3status/archive/2.9.tar.gz')
+sources+=('https://nodejs.org/dist/v0.12.7/node-v0.12.7.tar.gz')
 
 for src in "${sources[@]}"; do
   cd ${srcdir}
@@ -95,6 +96,7 @@ specs=('/vagrant/xcb-util-cursor.spec')
 specs+=('/vagrant/yajl2.spec')
 specs+=('/vagrant/i3.spec')
 specs+=('/vagrant/i3status.spec')
+specs+=('/vagrant/nodejs.spec')
 resultpath=$(mock -r ${mockconfig} -p)../result
 
 for spec in "${specs[@]}"; do

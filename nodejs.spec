@@ -105,6 +105,7 @@ cp -p common.gypi %{buildroot}%{_datadir}/node
 %{_bindir}/node_g
 %{_includedir}/node
 %{_datadir}/node/common.gypi
+%{_datadir}/systemtap/tapset/node.stp
 
 %files docs
 %{_defaultdocdir}/%{name}-docs-%{version}
